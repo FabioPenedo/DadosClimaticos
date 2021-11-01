@@ -6,7 +6,7 @@ function time(){
     if(hour >= 6 && hour < 18){
         qS('.modal').style.backgroundColor = '#fefae070';
         qS('.modal').addEventListener('mouseover', ()=>{
-            qS('.modal').style.backgroundColor = '#fefae0a1';
+            qS('.modal').style.backgroundColor = '#fefae086';
         });
         qS('.modal').addEventListener('mouseout', ()=>{
             qS('.modal').style.backgroundColor = '#fefae070';
