@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(assets/imagem/a.jpg);
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 1250px;
+  height: 750px;
+  background-color: #fefae0a1;
+  border-radius: 20px;
+}
+.modal .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  max-width: 400px;
+}
+.modal .form .aviso {
+  color: #333;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.modal .form .busca {
+  display: flex;
+  width: 100%;
+}
+.modal .form .busca #searchInput {
+  flex: 1;
+  padding: 10px;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 0;
+}
+.modal .form .busca button {
+  width: 20%;
+  padding: 10px;
+  font-size: 15px;
+  border: 0;
+  background-color: #555;
+  color: #FFF;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.modal .form .busca button:hover {
+  background-color: #444;
+}
+.modal .resultado {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  flex: 2;
+  width: 100%;
+  max-width: 1000px;
+}
+.modal .resultado .titulo {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #01031ccb;
+}
+.modal .resultado h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #01031cb6;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+.modal .resultado .info--1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.modal .resultado .info--1 .coor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+}
+.modal .resultado .info--1 .coor .lat {
+  font-weight: 700;
+  margin-bottom: 2px;
+  color: #01031ccb;
+}
+.modal .resultado .info--1 .coor .long {
+  font-weight: 700;
+  color: #01031ccb;
+}
+.modal .resultado .info--1 .temp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 650px;
+}
+.modal .resultado .info--1 .temp .tempInfo {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 2px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #01031cb6;
+}
+.modal .resultado .info--1 .temp .tempInfo .tempMin, .modal .resultado .info--1 .temp .tempInfo .tempAtual, .modal .resultado .info--1 .temp .tempInfo .tempMax {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal .resultado .info--1 .temp .tempInfo span {
+  font-weight: 700;
+  font-size: 25px;
+  color: #01031ccb;
+}
+.modal .resultado .info--1 .temp .tempDesc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 25px;
+  color: #01031ccb;
+}
+.modal .resultado .info--2 {
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  justify-content: space-around;
+}
+.modal .resultado .info--2 .vento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal .resultado .info--2 .vento .ventoInfo {
+  font-weight: 700;
+  font-size: 25px;
+  color: #01031ccb;
+}
+.modal .resultado .info--2 .vento .ventoInfo span {
+  font-size: 20px;
+  font-weight: 500;
+}
+.modal .resultado .info--2 .vento .ventoArea {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #01031ccb;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 20px;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+.modal .resultado .info--2 .vento .ventoArea .ventoPonto {
+  width: 15px;
+  height: 1px;
+  background-color: #01031ccb;
+  transform-origin: left;
+}
+.modal .resultado .info--2 .sol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal .resultado .info--2 .sol .solInfo {
+  justify-content: space-around;
+  width: 200px;
+  display: flex;
+  color: #01031ccb;
+}
+.modal .resultado .info--2 .sol .solInfo .nasSol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modal .resultado .info--2 .sol .solInfo .nasSol span {
+  font-weight: 700;
+  font-size: 25px;
+}
+.modal .resultado .info--2 .sol .solInfo .nasSol img {
+  width: 45px;
+}
+.modal .resultado .info--2 .sol .solInfo .pSol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modal .resultado .info--2 .sol .solInfo .pSol span {
+  font-weight: 700;
+  font-size: 25px;
+}
+.modal .resultado .info--2 .sol .solInfo .pSol img {
+  width: 45px;
+}
+
+footer {
+  font-weight: 500;
+  color: #01031c;
+  font-size: 20px;
+  margin-top: 20px;
+}
+footer a {
+  color: #01031c;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #1d3557;
+  text-decoration: underline;
+}
