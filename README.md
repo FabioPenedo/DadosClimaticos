@@ -10,6 +10,7 @@
 + Altera estilo de acordo com horario local.
 
 ### Usado ###
++ JavaScript
 + HTML
 + CSS
-+ JavaScript
++ SCSS
