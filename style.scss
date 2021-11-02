@@ -256,18 +256,62 @@ body {
     }
 }
 footer {
-    font-weight: 500;
+    font-weight: 700;
     color: #01031c;
     font-size: 20px;
     margin-top: 20px;
 
     a {
-        color: #01031c;
+        color: #01031c;;
         text-decoration: none;
     }
     a:hover {
-        color: #1d3557;
+        color: $color-3;
         text-decoration: underline;
     }
 }
 
+@media (max-width: 1250px){
+    .modal {
+        width: 100%;
+        max-width: 1250px;
+        height: 100%;
+        border-radius: 0px;
+        padding: 20px;
+        .form {
+            max-width: 320px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .modal {
+        .resultado {
+            .titulo {
+                font-size: 30px;
+            }
+            .info--1 {
+                flex-direction: column;
+
+                .coor {
+                    margin-bottom: 40px;
+                }
+
+                .temp {
+                    max-width: none;
+
+                    .tempInfo {
+                        flex-direction: column;
+                    }
+                }
+            }
+            .info--2 {
+                flex-direction: column;
+
+                .sol {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
